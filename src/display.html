@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "DungGeunMo";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0px;
+        color: white;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        font-family: "DungGeunMo";
+      }
+      table,
+      td {
+        margin: 0px;
+        padding: 0px;
+        border-collapse: collapse;
+      }
+      img {
+        display: block;
+      }
+      .clock {
+        width: 262px;
+        height: 250px;
+        vertical-align: top;
+      }
+      .artistSpace {
+        vertical-align: bottom;
+      }
+      .artistTitle {
+        font-size: 37px;
+        text-align: center;
+        margin: 0px;
+        margin-left: 12px;
+      }
+      .artist {
+        color: orange;
+        font-size: 25px;
+        text-align: center;
+        margin: 0px;
+        margin-left: 12px;
+        margin-top: 10px;
+      }
+      .pictures {
+        text-align: top;
+        margin: 0px;
+        width: 930px;
+        height: 660px;
+      }
+      .picture {
+        width: 900px;
+      }
+      .remaining {
+        color: orange;
+        font-size: 45px;
+        align-items: center;
+        margin: 20px;
+      }
+      .remainingTime {
+        font-size: 105px;
+        text-align: center;
+        margin: 10px;
+      }
+
+      #slideshow {
+        margin: 0px;
+        position: relative;
+        top: -222px;
+        left: 27px;
+        width: 240px;
+        height: 240px;
+        padding: 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      }
+
+      #slideshow > div {
+        position: absolute;
+        top: 10px;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="js/timer.js"></script>
+    <title>Display</title>
+  </head>
+  <body onload="startTimer()">
+    <audio id="audio" autoplay>
+      <source src="audio/beautiful_country_mr.mp3" />
+    </audio>
+    <table style="height: 100%; width: 100%; border: 0px" border="0">
+      <tr style="height: 20px">
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <td height="100px" width="262px"></td>
+        <td rowspan="4" class="pictures">
+          <div id="slideshow">
+            <div>
+              <img src="img/innerImg/img_01.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_02.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_03.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_04.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_05.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_06.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_07.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_08.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_09.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_10.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_11.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_12.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_13.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_14.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_15.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_16.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_01.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_02.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_03.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_04.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_05.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_06.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_07.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_08.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_09.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_10.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_11.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_12.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_13.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_14.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_15.jpg" class="picture" />
+            </div>
+            <div>
+              <img src="img/innerImg/img_16.jpg" class="picture" />
+            </div>
+          </div>
+        </td>
+        <td rowspan="3"><div id="display" class="remaining"></div></td>
+      </tr>
+      <tr>
+        <td class="clock">
+          <img src="img/clock.png" width="240" style="margin-left: 25px" />
+        </td>
+      </tr>
+      <tr>
+        <td class="artistSpace">
+          <div class="artistTitle">창작가</div>
+          <div class="artist">원종윤(꾸러기)</div>
+          <div class="artist">김무영(새우튀김무영)</div>
+          <div class="artist">선지우(지우)</div>
+          <div class="artist">김태완(와니31)</div>
+        </td>
+      </tr>
+      <tr>
+        <td height="70px"></td>
+      </tr>
+      <tr style="height: 200px; width: 100%; margin: 0">
+        <td colspan="3" style="margin: 0">
+          <img src="img/olympicRings.png" width="1746px" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
