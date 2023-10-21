@@ -8,8 +8,7 @@
 
 ## 이미지
 
-- ![emblem_680x900](https://github.com/pcmola/daejeon-is-u/assets/20479087/de8b82bc-eafc-4e12-9ab7-3d17ff3962fa)
-- ![01](https://github.com/pcmola/daejeon-is-u/assets/20479087/c0eeebb5-1dec-4d6f-8a07-abba522cb387)
+- ![capture](https://github.com/pcmola/seoul-1988/assets/20479087/88cd7a8e-9cb9-40cc-ba20-f61d34516b1b)
 - ![11](https://github.com/pcmola/daejeon-is-u/assets/20479087/bbf05c7b-94b6-4f1d-ac54-4cb5a62d6050)
 
 ## 동영상
